@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Day Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="assets/music.mp3" type="audio/mp3">
+    </audio>
+
+    <header>
+        <h1>Happy Chocolate Day, My Love! 🍫❤️</h1>
+        <button onclick="toggleMusic()">🎶 Play Music</button>
+    </header>
+
+    <section class="chocolate-box">
+        <h2>Click a chocolate to reveal a message!</h2>
+        <div class="chocolates">
+            <div class="choco" onclick="showMessage(0)">🍫</div>
+            <div class="choco" onclick="showMessage(1)">🍫</div>
+            <div class="choco" onclick="showMessage(2)">🍫</div>
+        </div>
+        <p id="choco-message"></p>
+    </section>
+
+    <section class="love-letter">
+        <h2>A Love Letter for You 💌</h2>
+        <p id="letter-text">
+            My love, even though we're miles apart, my heart is always with you. Every day, I dream of the moment we meet. Until then, let these words and this little website remind you how much I cherish you. ❤️
+        </p>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Sweet Memories 📸</h2>
+        <div class="images">
+            <img src="assets/photo1.jpg" alt="Memory 1">
+            <img src="assets/photo2.jpg" alt="Memory 2">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
